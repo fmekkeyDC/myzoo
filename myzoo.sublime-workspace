@@ -1,0 +1,584 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"col",
+				"color"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"co",
+				"color"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/views/layout/content.blade.php",
+			"settings":
+			{
+				"buffer_size": 311,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/routes.php",
+			"settings":
+			{
+				"buffer_size": 522,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/HomeController.php",
+			"settings":
+			{
+				"buffer_size": 688,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/layout/lib/bootstrap/css/bootstrap.rtl.css",
+			"settings":
+			{
+				"buffer_size": 146241,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/layout/footer.blade.php",
+			"settings":
+			{
+				"buffer_size": 2562,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/views/layout/header.blade.php",
+			"settings":
+			{
+				"buffer_size": 2030,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/views/layout/navbar.blade.php",
+			"settings":
+			{
+				"buffer_size": 3585,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/views/layout/left.blade.php",
+			"settings":
+			{
+				"buffer_size": 6300,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 242.0,
+		"last_filter": "insta",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 432.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/xampp/htdocs/myzoo",
+		"/D/xampp/htdocs/myzoo/app",
+		"/D/xampp/htdocs/myzoo/app/controllers",
+		"/D/xampp/htdocs/myzoo/app/database",
+		"/D/xampp/htdocs/myzoo/app/views",
+		"/D/xampp/htdocs/myzoo/app/views/layout"
+	],
+	"file_history":
+	[
+		"/D/xampp/htdocs/myzoo/public/layout/css/main.rtl.css",
+		"/D/xampp/htdocs/myzoo/public/layout/css/main.css",
+		"/D/xampp/htdocs/myzoo/app/storage/views/ac9fbba560af8305415d9cd7eab3cd62",
+		"/D/xampp/htdocs/myzoo/app/storage/views/4c6fc26482cb9d9e32fa63ed9098a1e2",
+		"/D/xampp/htdocs/myzoo/app/views/layout/right.blade.php",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/typography.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/table.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/sm.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/progress.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/pricing.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/panel.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/offline.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/no-right-sidebar.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/no-main-search.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/no-left-sidebar.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/no-left-sidebar-main-search.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/no-left-right-sidebar.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/no-header.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/no-header-sidebar.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/maps.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/login.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/index.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/icon.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/grid.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/fxhmoxed.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/form-wysiwyg.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/form-wizard.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/form-validation.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/form-general.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/fixed-mini-sidebar.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/fixed-menu.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/fixed-menu-boxed.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/fixed-header.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/fixed-header-mini-sidebar.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/fixed-header-menu.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/fixed-header-fixed-mini-sidebar.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/fixed-header-boxed.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/file.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/dashboard.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/countdown.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/chart.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/calendar.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/button.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/boxed.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/bgimage.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/bgcolor.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/alterne.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/503.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/500.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/405.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/404.html",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/403.html",
+		"/D/xampp/htdocs/myzoo/app/views/layout/left.blade.php",
+		"/D/xampp/htdocs/myzoo/app/views/layout/test.blade.php",
+		"/D/xampp/htdocs/myzoo/app/views/layout/navbar.blade.php",
+		"/D/xampp/htdocs/myzoo/app/views/layout/footer.blade.php",
+		"/D/xampp/htdocs/myzoo/app/config/app.php",
+		"/D/xampp/htdocs/myzoo/app/routes.php",
+		"/D/xampp/htdocs/myzoo/app/controllers/HomeController.php",
+		"/D/xampp/htdocs/myzoo/app/views/layout/header.blade.php",
+		"/D/xampp/htdocs/myzoo/app/config/database.php",
+		"/D/xampp/htdocs/myzoo/app/database/migrations/2016_09_03_202602_users.php",
+		"/D/xampp/htdocs/myzoo/app/database/migrations/2016_09_03_202928_applications.php",
+		"/D/xampp/htdocs/myzoo/app/views/Bootstrap-Admin-Template-master/public/rtl/blank.html",
+		"/D/xampp/htdocs/myzoo/app/database/migrations/2016_09_03_200340_applications.php",
+		"/D/xampp/htdocs/myzoo/app/database/migrations/2016_09_03_201628_users.php",
+		"/D/xampp/htdocs/myzoo/app/database/migrations/2016_09_03_195946_applications.php",
+		"/D/xampp/htdocs/myzoo/index.php"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 96.0,
+		"where_history":
+		[
+			"D:\\xampp\\htdocs\\myzoo",
+			"",
+			"D:\\xampp\\htdocs\\myzoo",
+			"D:\\xampp\\htdocs\\myzoo\\public\\layout\\css",
+			"D:\\xampp\\htdocs\\myzoo\\app\\views",
+			"D:\\xampp\\htdocs\\myzoo\\app\\views\\layout"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"class=\"fa fa-square-o\"",
+			" \nBlank Page",
+			"2016 © Metis Bootstrap Admin Template",
+			"less",
+			"../img/pattern/arches.png",
+			"arches.png",
+			"../",
+			"font",
+			"font ",
+			"font",
+			"../assets/",
+			"../assests/",
+			"../assets/",
+			"img\\",
+			"img",
+			";",
+			"../assets/",
+			"../assets"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"public/layout/img/pattern/arches.png",
+			"public/layout/",
+			"public/layout",
+			"{{$public_path}}",
+			"{{$public_path}}/layout/assets"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/views/layout/content.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 311,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								311,
+								311
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/routes.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 522,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								517,
+								517
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/controllers/HomeController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 688,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								484,
+								495
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 180.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "public/layout/lib/bootstrap/css/bootstrap.rtl.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 146241,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								21245,
+								21245
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/views/layout/footer.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2562,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								140,
+								140
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 480.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/views/layout/header.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2030,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1628,
+								1628
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/views/layout/navbar.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3585,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								576,
+								529
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1020.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/views/layout/left.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6300,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								805,
+								805
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 60.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "myzoo.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 344.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
