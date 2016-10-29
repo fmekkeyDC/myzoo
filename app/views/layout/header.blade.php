@@ -21,6 +21,18 @@
 	{{HTML::Style($public_path."css/main.rtl.css")}}
 	{{HTML::Style($public_path."lib/metismenu/metisMenu.css")}}
 	{{HTML::Style($public_path."lib/animate.css/animate.css")}}
+	{{HTML::Style($public_path."lib/plupload/js/jquery.plupload.queue/css/jquery.plupload.queue.css")}}
+	{{HTML::Style($public_path."lib/jquery.gritter/css/jquery.gritter.css")}}
+	{{HTML::Style($public_path."css/uniform.default.min.css")}}
+	{{HTML::Style($public_path."css/jasny-bootstrap.min.css")}}
+    {{HTML::Style($public_path."lib/plupload/js/jquery.plupload.queue/css/jquery.plupload.queue.css")}}
+    {{HTML::Style($public_path."lib/jquery.gritter/css/jquery.gritter.css")}}
+   	{{HTML::Style($public_path."css/datepicker3.min.css")}}
+    {{HTML::Style($public_path."css/bootstrap-colorpicker.min.css")}}
+    {{HTML::Style($public_path."css/bootstrap-datetimepicker.min.css")}}
+    {{HTML::Style($public_path."css/select2.css")}}
+    {{HTML::Style($public_path."css/jquery.dataTables.min.css")}}
+    
 
 	<style media="screen">
 		body {
@@ -30,6 +42,16 @@
 		select , input {
 			font-size: 12px !important;
 		}
+
+		.datepicker{
+		    right: auto
+		}
+
+		textarea{
+			height: 50px !important;
+			max-height: 50px !important;
+		}
+
 	</style>
 
 
@@ -46,13 +68,9 @@
 			rootpath: "{{$public_path}}"
 		};
 	</script>
-{{-- 	{{HTML::Style($public_path."css/style-switcher.css")}}
-	{{HTML::Style($public_path."less/theme.less")}}
-	{{HTML::Script($public_path."js/less.js")}} --}}
-
-	<link rel="stylesheet" href="{{$public_path}}css/style-switcher.css"">
+	{{HTML::Style($public_path."css/style-switcher.css")}}
 	<link rel="stylesheet/less" type="text/css" href="{{$public_path}}less/theme.less">
-	<script src="{{$public_path}}js/less.js"></script>
+	{{HTML::Script($public_path."js/less.js")}}
   </head>
   <body class="">
   <div class="bg-dark dk" id="wrap">

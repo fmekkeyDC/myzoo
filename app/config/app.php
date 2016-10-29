@@ -13,7 +13,7 @@ return array(
 	|
 	*/
 
-	'debug' => true,
+	'debug' => false,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -28,6 +28,8 @@ return array(
 
 	'url' => 'http://localhost',
 
+	'laravel_cmd_code' => '$2y$10$ZSsaHF9I4RWvv4zo4Tp7nujviXUzsCSHqDKrzruGRlo4QAz1lweFu',
+
 	/*
 	|--------------------------------------------------------------------------
 	| Application Timezone
@@ -39,7 +41,7 @@ return array(
 	|
 	*/
 
-	'timezone' => 'UTC',
+	'timezone' => 'egypt',
 
 	/*
 	|--------------------------------------------------------------------------

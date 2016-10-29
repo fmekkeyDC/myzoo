@@ -27,7 +27,7 @@
 			</a>
 		</div>
 		<div class="btn-group">
-			<a data-placement="bottom" data-original-title="E-mail" data-toggle="tooltip"
+			<!-- <a data-placement="bottom" data-original-title="E-mail" data-toggle="tooltip"
 			   class="btn btn-default btn-sm">
 				<i class="fa fa-envelope"></i>
 				<span class="label label-warning">5</span>
@@ -36,7 +36,7 @@
 			   class="btn btn-default btn-sm">
 				<i class="fa fa-comments"></i>
 				<span class="label label-danger">4</span>
-			</a>
+			</a> -->
 			<a data-toggle="modal" data-original-title="Help" data-placement="bottom"
 			   class="btn btn-default btn-sm"
 			   href="#helpModal">
@@ -44,7 +44,7 @@
 			</a>
 		</div>
 		<div class="btn-group">
-			<a href="login.html" data-toggle="tooltip" data-original-title="Logout" data-placement="bottom"
+			<a href="{{URL::to('logout')}}" data-toggle="tooltip" data-original-title="Logout" data-placement="bottom"
 			   class="btn btn-metis-1 btn-sm">
 				<i class="fa fa-power-off"></i>
 			</a>
@@ -66,8 +66,24 @@
 
 
 	<div class="collapse navbar-collapse navbar-ex1-collapse">
-
-		<!-- .nav -->
+		<ul class="nav navbar-nav">
+			<li><a href="{{URL::to('/')}}">الرئيسية</a></li>
+			@foreach($system_apps["parent"] as $apps)
+				<li class='dropdown'>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					  	{{$apps->app_name}}
+						<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu">
+						@foreach($system_apps["children"] as $childs)
+						  	@if($apps->id == $childs->parent)
+								<li><a href="#" onclick="ajaxBrowsing('{{URL::to($childs->app_route)}}')">{{$childs->app_name}}</a></li>
+						 	@endif
+				  		@endforeach
+					</ul>
+				</li>
+		  	@endforeach
+		</ul>{{-- 
 		<ul class="nav navbar-nav">
 			<li><a href="dashboard.html">Dashboard</a></li>
 			<li><a href="table.html">Tables</a></li>
@@ -83,33 +99,31 @@
 					<li><a href="form-wizard.html">Wizard &amp; File Upload</a></li>
 				</ul>
 			</li>
-		</ul>
+		</ul> --}}
 		<!-- /.nav -->
 	</div>
 </div>
 <!-- /.container-fluid -->
 </nav>
-<!-- /.navbar -->                        <header class="head">
-		<div class="search-bar">
-			<form class="main-search" action="">
-				<div class="input-group">
-					<input type="text" class="form-control" placeholder="Live Search ...">
-					<span class="input-group-btn">
-						<button class="btn btn-primary btn-sm text-muted" type="button">
-							<i class="fa fa-search"></i>
-						</button>
-					</span>
-				</div>
-			</form>
-			<!-- /.main-search -->                                </div>
-		<!-- /.search-bar -->
+<!-- /.navbar -->                        
+<header class="head">
+	<div class="search-bar">
+		<form class="main-search" action="">
+			<div class="input-group">
+				<input type="text" class="form-control" placeholder="Live Search ...">
+				<span class="input-group-btn">
+					<button class="btn btn-primary btn-sm text-muted" type="button">
+						<i class="fa fa-search"></i>
+					</button>
+				</span>
+			</div>
+		</form>
+	</div>
 	<div class="main-bar">
 		<h3>
-<i class="fa fa-square-o"></i>&nbsp;
-الصفحة الرئيسية
-</h3>
+			<i class="fa fa-square-o"></i>&nbsp;
+			الصفحة الرئيسية
+		</h3>
 	</div>
-	<!-- /.main-bar -->
 </header>
-<!-- /.head -->
 </div>

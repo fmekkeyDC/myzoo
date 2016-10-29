@@ -2,7 +2,7 @@
 	<div class="outer">
 		<div class="inner bg-light lter" style="min-height: 1000px">
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-xs-12">
 				    <div class="box dark">
 				        <header>
 				            <div class="icons"><i class="fa fa-edit"></i></div>
@@ -24,58 +24,58 @@
 				        </header>
 				        <div id="div-1" class="body collapse in" aria-expanded="true">
 				        	<div class="messages"></div>
-				        	<div class="col-lg-4">
+				        	<div class="col-xs-4">
 				        		<div class="alert alert-success">تعريف تطبيق جديد</div>
 					        	{{Form::open(["action" => "addNewApplication","id"=>"addNewApplication" ,"class"=>"form-horizontal"])}}
 					                <div class="form-group">
-					                	{{Form::label('app_name', 'إسم التطبيق',["class"=>"control-label col-lg-2"])}}
-					                    <div class="col-lg-10">
+					                	{{Form::label('app_name', 'إسم التطبيق',["class"=>"control-label col-xs-2"])}}
+					                    <div class="col-xs-10">
 					                    	{{Form::text("app_name","",["id"=>"app_name" , "name"=>"app_name" , "placeholder"=>"إسم التطبيق" , "class"=>"form-control"])}}
 					                    </div>
 					                </div>
 					                <div class="form-group">
-					                	{{Form::label('app_route', 'مسار التوجيه',["class"=>"control-label col-lg-2"])}}
-					                    <div class="col-lg-10">
+					                	{{Form::label('app_route', 'مسار التوجيه',["class"=>"control-label col-xs-2"])}}
+					                    <div class="col-xs-10">
 					                    	{{Form::text("app_route","",["id"=>"app_route" , "name"=>"app_route" , "placeholder"=>"مسار التوجيه" , "class"=>"form-control"])}}
 					                    </div>
 					                </div>
 
 					                <div class="form-group">
-					                	{{Form::label('icon', 'صورة مصغرة',["class"=>"control-label col-lg-2"])}}
-					                    <div class="col-lg-10">
+					                	{{Form::label('icon', 'صورة مصغرة',["class"=>"control-label col-xs-2"])}}
+					                    <div class="col-xs-10">
 					                    	{{Form::text("icon","",["id"=>"icon" , "name"=>"icon" , "placeholder"=>"صورة مصغرة" , "class"=>"form-control"])}}
 					                    </div>
 					                </div>
 
 					                <div class="form-group">
-					                	{{Form::label('app_active', 'حالة التطبيق',["class"=>"control-label col-lg-2"])}}
-					                    <div class="col-lg-10">
+					                	{{Form::label('app_active', 'حالة التطبيق',["class"=>"control-label col-xs-2"])}}
+					                    <div class="col-xs-10">
 					                    	{{Form::select('app_active', $listOfOptions,'', ["id"=>"app_active" , "name"=>"app_active" , "class"=>"form-control"])}}
 					                    </div>
 					                </div>
 
 					                <div class="form-group">
-					                	{{Form::label('app_active', 'الإرتباط',["class"=>"control-label col-lg-2"])}}
-					                    <div class="col-lg-10 parents">
+					                	{{Form::label('app_active', 'الإرتباط',["class"=>"control-label col-xs-2"])}}
+					                    <div class="col-xs-10 parents">
 					                    	{{Form::select('parent', $appsParents,'', ["id"=>"parent" , "name"=>"parent" , "class"=>"form-control"])}}
 					                    </div>
 					                </div>
 					                
 					                <div class="form-group">
-					                	{{Form::label('sort', 'الترتيب',["class"=>"control-label col-lg-2"])}}
-					                    <div class="col-lg-10">
+					                	{{Form::label('sort', 'الترتيب',["class"=>"control-label col-xs-2"])}}
+					                    <div class="col-xs-10">
 					                    	{{Form::text("sort",0,["id"=>"sort" , "name"=>"sort" , "placeholder"=>"الترتيب" , "class"=>"form-control"])}}
 					                    </div>
 					                </div>
 
 					                <div class="form-group">
-					                    <div class="col-lg-12">
+					                    <div class="col-xs-12">
 					                    	{{Form::submit('حفظ',["class"=>"btn btn-success btn-block"])}}
 					                    </div>
 					                </div>
 					            {{Form::close()}}
 				            </div>
-				            <div class="col-lg-8">
+				            <div class="col-xs-8">
 				        		<div class="alert alert-info">التطبيقات الحالية</div>
 				            	<div class="table-responsive tableHolder">
 				            		<table class="table table-bordered sortableTable responsive-table tablesorter tablesorter-default">
@@ -124,27 +124,21 @@
 	</div>
 	<!-- /.outer -->
 </div>
-{{HTML::Script($public_path."js/jquery.min.js")}}
-{{HTML::Script($public_path."js/moment.min.js")}}
-{{HTML::Script($public_path."js/jquery-ui.min.js")}}
-{{HTML::Script($public_path."js/fullcalendar.min.js")}}
-{{HTML::Script($public_path."js/jquery.tablesorter.min.js")}}
-{{HTML::Script($public_path."js/jquery.sparkline.min.js")}}
-{{HTML::Script($public_path."js/jquery.flot.min.js")}}
-{{HTML::Script($public_path."js/jquery.flot.selection.min.js")}}
-{{HTML::Script($public_path."js/jquery.flot.resize.min.js")}}
-{{HTML::Script($public_path."js/metisMenu.min.js")}}
-{{HTML::Script($public_path."js/screenfull.min.js")}}
-{{HTML::Script($public_path."lib/bootstrap/js/bootstrap.js")}}
-{{HTML::Script($public_path."lib/screenfull/screenfull.js")}}
-{{HTML::Script($public_path."js/core.js")}}
-{{HTML::Script($public_path."js/app.js")}}
-{{HTML::Script($public_path."js/style-switcher.js")}}
-{{HTML::Script($public_path."js/jquery.cookie.js")}}
-
-
 <script type="text/javascript">
 	$(function(){
+        $(".tablesorter").dataTable(
+        	 {"oLanguage": {
+			      "sSearch": "البحث عن تطبيقات : ",
+			      "sInfo": "إجمالي التطبيقات _TOTAL_ تطبيق ويعرض الأن (_START_ من _END_)",
+			      "sLengthMenu": "عرض _MENU_ تطبيق بالصفحة الواحدة",
+			      "sZeroRecords": "لاتوجد تطبيقات حالياً",
+			      "oPaginate": {
+		        		"sNext": "التالي",
+		        		"sPrevious": "السابق"
+		      		}
+		   		}
+			}
+        );
 		$(".messages").hide();
 		$("#addNewApplication").on("submit",function(e){
 			var app_name = $("#app_name").val();
@@ -172,7 +166,7 @@
 				},
 				success : function(data){
 					if (data.errorsFounder == 1){
-						var str = "";
+						var str ='';
 						$.each(data.messages,function(key,value){
 							str += "<p> <i class='fa fa-times'></i> "+value+"</p>";
 						});
@@ -334,7 +328,7 @@
 			},
 			success : function(data){
 				if (data.errorsFounder == 1){
-					var str = "";
+					var str = '';
 					$.each(data.messages,function(key,value){
 						str += "<p> <i class='fa fa-times'></i> "+value+"</p>";
 					});

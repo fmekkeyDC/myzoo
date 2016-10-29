@@ -13,7 +13,7 @@
 	<div class="outer">
 		<div class="inner bg-light lter" style="height: 2000px">
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-xs-12">
 				    <div class="box dark">
 				        <header>
 				            <div class="icons"><i class="fa fa-edit"></i></div>
@@ -38,79 +38,69 @@
 				        	<div class="messages"></div>
 				        	{{Form::open(["action" => "addItemsToStores","id"=>"addItemsToStores" ,"class"=>"form-horizontal"])}}
 					        	<div class="row">
-						        	<div class="col-lg-12">
+						        	<div class="col-xs-12">
 						                <div class="form-group">
-						                	{{Form::label('app_name', 'رقم الإذن',["class"=>"control-label col-lg-2"])}}
-						                    <div class="col-lg-10">
-						                    	{{Form::text("app_name","",["id"=>"app_name" , "name"=>"app_name" , "placeholder"=>"رقم الإذن" , "class"=>"form-control"])}}
+						                	{{Form::label('invoice_number', 'رقم الإذن',["class"=>"control-label col-xs-2"])}}
+						                    <div class="col-xs-10">
+						                    	{{Form::text("invoice_number","",["id"=>"invoice_number" , "placeholder"=>"رقم الإذن" , "class"=>"form-control invoice_number"])}}
 						                    </div>
 						                </div>
+
 						                <div class="form-group">
-						                	{{Form::label('app_route', 'تاريخ الإذن',["class"=>"control-label col-lg-2"])}}
-						                    <div class="col-lg-10">
-						                    	{{Form::text("app_route","",["id"=>"app_route" , "name"=>"app_route" , "placeholder"=>"تاريخ الإذن" , "class"=>"form-control"])}}
+						                	{{Form::label('invoice_date', 'تاريخ الإذن',["class"=>"control-label col-xs-2"])}}
+						                    <div class="col-xs-10">
+						                    	{{Form::text("invoice_date","",["id"=>"invoice_date" , "name"=>"app_route" , "placeholder"=>"تاريخ الإذن" , "class"=>"form-control date"])}}
 						                    </div>
 						                </div>
+						                
 						                <div class="form-group">
-						                	{{Form::label('app_route', 'سبب الحذف',["class"=>"control-label col-lg-2"])}}
-						                    <div class="col-lg-10">
-						                    	{{Form::text("app_route","",["id"=>"app_route" , "name"=>"app_route" , "placeholder"=>"سبب الحذف" , "class"=>"form-control"])}}
+						                	{{Form::label('provider_name', 'اسم المورد',["class"=>"control-label col-xs-2"])}}
+						                    <div class="col-xs-10">
+						                    	{{Form::text("provider_name","",["id"=>"provider_name" , "placeholder"=>"اسم المورد" , "class"=>"form-control provider_name"])}}
 						                    </div>
 						                </div>
+
+						                <div class="form-group">
+						                	{{Form::label('delete_reason', 'سبب الحذف',["class"=>"control-label col-xs-2"])}}
+						                    <div class="col-xs-10">
+						                    	{{Form::text("delete_reason","",["id"=>"delete_reason" ,  "placeholder"=>"سبب الحذف" , "class"=>"form-control"])}}
+						                    </div>
+						                </div>
+
 						            </div>
 
-						            <div class="col-lg-12" style="margin-bottom:12px;">
+						            {{-- <div class="col-xs-12" style="margin-bottom:12px;">
 						            	<button class="btn btn-danger" type="button" id="add_new_items">حذف الإذن بالكامل</button>
-						            </div>
+						            </div> --}}
 
-						            <div class="col-lg-12">
+						            <div class="col-xs-12">
 						            	<div class="table-responsive tableHolder">
-						            		<table class="table table-bordered sortableTable responsive-table tablesorter tablesorter-default">
+						            		<table class="table table-bordered itemsTable sortableTable responsive-table tablesorter tablesorter-default">
 						            			<thead>
 						            				<tr>
-						            					<th>تحديد</th>
 						            					<th>كود الصنف</th>
 						            					<th>إسم الصنف</th>
 						            					<th>نوع الصنف</th>
-						            					<th>العدد</th>
-						            					<th>حالة الصنف</th>
+						            					<th>الكمية الحالية</th>
+						            					<th>الكمية المراد حذفها</th>
+						            					<th>تعديل</th>
 						            				</tr>
 						            			</thead>
-						            			<tbody>
-						            				<tr>
-						            					<td>
-						            						{{Form::checkbox("icon","",false,["id"=>"icon" , "name"=>"icon" , "placeholder"=>"كود الصنف" , "class"=>"form-control input-sm"])}}
-						            					</td>
-						            					<td>
-						            						{{Form::text("icon","",["id"=>"icon" , "name"=>"icon" , "placeholder"=>"كود الصنف" , "class"=>"form-control"])}}
-						            					</td>
-						            					<td>
-						            						{{Form::text("icon","",["id"=>"icon" , "name"=>"icon" , "placeholder"=>"إسم الصنف" , "class"=>"form-control"])}}
-						            					</td>
-						            					<td>
-						            						{{Form::text("icon","",["id"=>"icon" , "name"=>"icon" , "placeholder"=>"النوع" , "class"=>"form-control"])}}
-						            					</td>
-						            					<td>
-						            						{{Form::text("icon","",["id"=>"icon" , "name"=>"icon" , "placeholder"=>"العدد" , "class"=>"form-control"])}}
-						            					</td>
-						            					<td>
-						                    				{{Form::text("icon","",["id"=>"icon" , "name"=>"icon" , "placeholder"=>"حالة الصنف" , "class"=>"form-control"])}}
-						            					</td>
-						            				</tr>
-						            			</tbody>
+						            			<tbody class="drawer"></tbody>
 					            			</table>
 				            			</div>
 				              		</div>
 				              	</div>
 				              	<div class="row">
-				              		<div class="col-lg-12">
+				              		<div class="col-xs-12">
 				              			<div class="form-group">
-						                    <div class="col-lg-12">
+						                    <div class="col-xs-12">
 						                    	{{Form::submit('حفظ',["class"=>"btn btn-success btn-block"])}}
 						                    </div>
 						                </div>
 				              		</div>
 				              	</div>
+				            	
 		            		</div>
 	            	{{Form::close()}}
 	            </div>
@@ -119,41 +109,151 @@
 	</div>
 	<!-- /.outer -->
 </div>
-
-{{HTML::Script($public_path."js/jquery.min.js")}}
-{{HTML::Script($public_path."js/moment.min.js")}}
-{{HTML::Script($public_path."js/jquery-ui.min.js")}}
-{{HTML::Script($public_path."js/fullcalendar.min.js")}}
-{{HTML::Script($public_path."js/jquery.tablesorter.min.js")}}
-{{HTML::Script($public_path."js/jquery.sparkline.min.js")}}
-{{HTML::Script($public_path."js/jquery.flot.min.js")}}
-{{HTML::Script($public_path."js/jquery.flot.selection.min.js")}}
-{{HTML::Script($public_path."js/jquery.flot.resize.min.js")}}
-{{HTML::Script($public_path."js/metisMenu.min.js")}}
-{{HTML::Script($public_path."js/screenfull.min.js")}}
-{{HTML::Script($public_path."lib/bootstrap/js/bootstrap.js")}}
-{{HTML::Script($public_path."lib/screenfull/screenfull.js")}}
-{{HTML::Script($public_path."js/core.js")}}
-{{HTML::Script($public_path."js/app.js")}}
-{{HTML::Script($public_path."js/style-switcher.js")}}
-{{HTML::Script($public_path."js/jquery.hotkeys.js")}}
-{{HTML::Script($public_path."js/jquery.cookie.js")}}
-
-
 <script type="text/javascript">
-
 	$(function(){
-		$('input').on('focus',function(){
-	        $(this).attr('autocomplete', 'off');
-	    });
-	});
-</script>
+		var current_parent_id = "";
+		$(".date").datepicker({
+		    language : 'ar',
+		    todayBtn : "linked",
+		    format : 'yyyy/mm/dd',
+		    autoClose : true
+		});
+		var plus14days = new Date();
+		plus14days.setDate(plus14days.getDate());
+		$(".date").datepicker("setDate", plus14days);
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/holder/2.4.1/holder.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/Uniform.js/2.1.2/jquery.uniform.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js"></script>
-<script src="{{$public_path}}lib/plupload/js/plupload.full.min.js"></script>
-<script src="{{$public_path}}lib/plupload/js/jquery.plupload.queue/jquery.plupload.queue.min.js"></script>
-<script src="{{$public_path}}lib/jquery.gritter/js/jquery.gritter.min.js"></script>
-<script src="{{$public_path}}lib/formwizard/js/jquery.form.wizard.js"></script>
+		$(".invoice_number").select2({
+			width:"100%",
+	        dir:"rtl",
+	        placeholder : 'ضع كود صنف يديوياً او بإستخدام جهاز قارئ البار كود',
+	        minimumInputLength: 1,
+	        id: function(bond){ return bond.id},
+	        ajax: {
+	        url: 'getInvoiceData',
+	        dataType: 'json',
+	        quietMillis: 250,
+	        data: function (term, page) {
+	            return {
+	                q: term,
+	            };
+	        },
+	        results: function (data, page) { 
+	            return { results: data.items };
+	        },
+	        cache: false
+	        },
+	        initSelection: function(element, callback) {
+	            return element;
+	        },
+	        formatResult: repoFormatResultItems,
+	        formatSelection: repoFormatSelectionItems,
+	        dropdownCssClass: "bigdrop",
+	        escapeMarkup: function (m) { return m; }		
+		}).on("select2-close", function () {
+		    setTimeout(function() {
+		        $('.select2-container-active').removeClass('select2-container-active');
+		        $(':focus').blur();
+		    }, 1);
+		});
+	});
+
+	function getChildrenData(parent_id){
+		current_parent_id = parent_id;
+		$.ajax({
+			url : "getChildrenData",
+			dataType : "json",
+			type : "get",
+			data : {
+				keyword : parent_id,
+			},
+			success : function (data){
+				var tableDrawer = "";
+
+				$.each(data,function(k,v){
+					tableDrawer += "<tr>";
+					tableDrawer += '<td>';
+					tableDrawer += '<input id="item_id_'+v.s_id+'" disabled="disabled"  name="item_id" type="hidden" value="'+v.s_id+'">';
+					tableDrawer += '<input id="item_code_'+v.s_id+'" disabled="disabled" placeholder="كود الصنف" class="form-control" name="item_code" type="text" value="'+v.store_items_item_name+'">';
+					tableDrawer += '</td>';
+					tableDrawer += '<td>';
+					tableDrawer += '<input id="item_name_'+v.s_id+'" disabled="disabled" placeholder="إسم الصنف" class="form-control" name="item_name" type="text" value="'+v.item_definer_item_name+'">';
+					tableDrawer += '</td>';
+					tableDrawer += '<td>';
+					tableDrawer += '<input id="item_type_'+v.s_id+'" disabled="disabled"  placeholder="النوع" class="form-control" name="item_type" type="text" value="'+v.item_type_name+'">';
+					tableDrawer += '</td>';
+					tableDrawer += '<td>';
+					tableDrawer += '<input id="item_quantity_'+v.s_id+'" disabled="disabled" placeholder="الكمية الحالية" class="form-control" name="item_quantity" type="text" value="'+v.net_quantity+'">';
+					tableDrawer += '</td>';
+					tableDrawer += '<td>';
+					tableDrawer += '<input id="item_quantity_deleted_'+v.s_id+'" name="item_quantity_deleted" placeholder="الكمية المراد حذفها" class="form-control" type="text" value="">';
+					tableDrawer += '</td>';
+					tableDrawer += "<td><button type='button' class='btn btn-success btn-sm' onclick='saveFN("+v.s_id+")'>حفظ</button></td>"
+					tableDrawer += "</tr>";
+				})
+				$(".drawer").html(tableDrawer);
+
+			}
+		})
+	}
+
+	function repoFormatResultItems(repo) {
+    	var markup = '<div class="row-fluid">' +
+	    '<div class="span10">' +
+	    '<div class="row-fluid">' +
+	       '<div class="span6">' + repo.invoice_number + '</div>' +
+	    '</div>';
+
+	    markup += '</div></div>';
+	    return markup;
+	}
+
+	function repoFormatSelectionItems(repo) {
+
+		$("#provider_name").val(repo.provider_name);
+		$("#invoice_date").val(repo.invoice_date);
+		getChildrenData(repo.invoice_number);
+	    return repo.invoice_number;
+	}
+	
+	function saveFN(invoice_parent){
+		if (confirm('هل انت متأكد من تعديل الكميات الحالية ؟')){
+			$.ajax({
+				url : "saveDeletedItems",
+				dataType : 'json',
+				type : 'post',
+				data : {
+					item_code : $("#item_code_"+invoice_parent+"").val(),
+					invoice_parent : $("#invoice_number").val(),
+					item_id : $("#item_id_"+invoice_parent+"").val(),
+					item_quantity : $("#item_quantity_"+invoice_parent+"").val(),
+					item_quantity_deleted : $("#item_quantity_deleted_"+invoice_parent+"").val(),
+					delete_reason : $("#delete_reason_"+invoice_parent+"").val()
+				},
+				beforeSend : function(){
+				$(".messages").show();
+				$(".messages").html("<div class='alert alert-info'>جاري معالجة الطلب <img src='public/layout/img/gears.gif' style='width: 53px;'></div>")
+				},
+				success : function(data){
+					if (data.errorsFounder == 1){
+						var str = '';
+						$.each(data.messages,function(key,value){
+							str += "<p> <i class='fa fa-times'></i> "+value+"</p>";
+						});
+
+						$(".messages").html("<div class='alert alert-danger'>"+str+"</div>");
+
+					}else{
+						getChildrenData(current_parent_id)
+						$(".messages").html("<div class='alert alert-success'> <i class='fa fa-check'></i> "+data.messages+"</div>")
+					}
+				},
+				complete : function(){
+					console.log("request completed");
+				},
+				error : function (error) {
+					console.error(error);
+				}
+			});
+		}
+	}
+</script>
